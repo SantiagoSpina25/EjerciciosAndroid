@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">ConstraintLayout</string>
+    <string name="text_content">
+        <p>El <code>ConstraintLayout</code> es un descendiente de <code>ViewGroup</code>, cuyo fin es permitirte posicionar y redimensionar views de forma flexible a partir de una gran variedad de reglas de restricción.</p>
+        <br/>
+        <p>Las restricciones son similares al concepto de posicionamiento relativo del <code>RelativeLayout</code>, no obstante el <code>ConstraintLayout</code> posee muchos más tipos de condicionamientos para crear diseños más libres.</p>
+        <br/>
+        <p>Sumándole a lo anterior, el editor de layouts de Android Studio provee una inmensa cantidad de interacciones visuales para explotar al máximo los atributos del layout.</p>
+        <br/>
+        <p>En este primer tutorial de la guía verás como:</p>
+        <ul>
+            <li>Añadir un ConstraintLayout a tu proyecto</li>
+            <li>Convertir un layout a ConstraintLayout</li>
+            <li>Comprender el manejo del editor de layouts con el ConstraintLayout</li>
+        </ul>
+    </string>
+    <string name="featured_image_desc">Imagen destacada</string>
+</resources>
