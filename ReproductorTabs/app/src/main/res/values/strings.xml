@@ -2,4 +2,8 @@
     <string name="app_name">ReproductorTabs</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="anterior_cancion">Anterior cancion</string>
+    <string name="reproducir_musica">reproducir musica</string>
+    <string name="siguiente_cancion">siguiente cancion</string>
+    <string name="portada_de_album">Portada de album</string>
 </resources>

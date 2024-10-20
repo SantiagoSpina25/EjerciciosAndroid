@@ -17,10 +17,10 @@ public class MiPageAdapter extends FragmentStateAdapter {
                 return new TabHome();
             case 1:
                 return new TabFavoritos();
-            case 3:
-                return new TabVideo();
-            default:
+            case 2:
                 return new TabMusica();
+            default:
+                return new TabVideo();
         }
     }
 

@@ -26,9 +26,23 @@ public class TabVideo extends Fragment {
     }
 
     @Override
+    public void onResume() {
+        super.onResume();
+
+        cargarVideo(getView());
+    }
+
+    @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view= inflater.inflate(R.layout.fragment_tab_video, container, false);
+        cargarVideo(view);
+
+        return view;
+    }
+
+
+    public void cargarVideo(View view){
         VideoView video = view.findViewById(R.id.videoView);
         String videoPath = "android.resource://" + getActivity().getPackageName() + "/" + R.raw.nugget;
         Uri uri = Uri.parse(videoPath);
@@ -46,7 +60,5 @@ public class TabVideo extends Fragment {
                 return false;
             }
         });
-
-        return view;
     }
 }
