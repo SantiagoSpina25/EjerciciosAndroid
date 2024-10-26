@@ -5,7 +5,7 @@
     android:id="@+id/frameLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#141313"
+    android:background="@drawable/gradient_background"
     tools:context=".TabMusica">
 
     <ImageView
@@ -19,15 +19,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/album_cosculluela"
-        tools:src="@tools:sample/avatars"/>
+        tools:src="@tools:sample/avatars" />
 
     <Button
         android:id="@+id/btnSiguiente"
-        android:contentDescription="@string/siguiente_cancion"
         android:layout_width="110dp"
         android:layout_height="100dp"
         android:layout_marginBottom="52dp"
         android:background="@drawable/proximo"
+        android:contentDescription="@string/siguiente_cancion"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -35,11 +35,11 @@
 
     <Button
         android:id="@+id/btnPlay"
-        android:contentDescription="@string/reproducir_musica"
         android:layout_width="110dp"
         android:layout_height="100dp"
         android:layout_marginBottom="52dp"
         android:background="@drawable/play"
+        android:contentDescription="@string/reproducir_musica"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btnSiguiente"
         app:layout_constraintHorizontal_bias="0.5"
@@ -66,6 +66,31 @@
         app:layout_constraintBottom_toTopOf="@+id/btnPlay"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgvPortada" />
+
+    <TextView
+        android:id="@+id/duracionCancion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="24dp"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgvPortada" />
+
+    <TextView
+        android:id="@+id/duracionTotalCancion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="28dp"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toEndOf="@+id/duracionCancion"
         app:layout_constraintTop_toBottomOf="@+id/imgvPortada" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

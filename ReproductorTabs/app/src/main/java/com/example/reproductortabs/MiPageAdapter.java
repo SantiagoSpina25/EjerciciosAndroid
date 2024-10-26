@@ -16,7 +16,7 @@ public class MiPageAdapter extends FragmentStateAdapter {
             case 0:
                 return new TabHome();
             case 1:
-                return new TabFavoritos();
+                return new TabArtistas();
             case 2:
                 return new TabMusica();
             default:
